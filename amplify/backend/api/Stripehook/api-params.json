@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/stripeweb-hook",
+      "lambdaFunction": "StripeHook",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/stripeweb-hook"
+    }
+  ],
+  "resourceName": "Stripehook",
+  "apiName": "Stripehook",
+  "functionArns": [
+    {
+      "lambdaFunction": "StripeHook"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-amazonclone-dev-20251-authRole",
+    "unAuthRoleName": "amplify-amazonclone-dev-20251-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "StripeHook",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
